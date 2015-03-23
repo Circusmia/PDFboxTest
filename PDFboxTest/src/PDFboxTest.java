@@ -16,16 +16,17 @@ public class PDFboxTest {
 
 	public static void main(String[] args) {
 
-//		PDFboxTest test = new PDFboxTest();
-//		String text = test.getText(doc);
-//		test.getParagraphs(text);
-//		test.getMetadata(doc);
+		PDFboxTest test = new PDFboxTest();
+		String text = test.getText(doc);
+		test.getParagraphs(text);
+		test.getMetadata(doc);
 
 	}
 
 	/*
-	 * entschlüsselt das Input-Document, wenn es entschlüsselt ist return:
-	 * entschlüsseltes pdf
+	 * entschlüsselt das Input-Document, wenn es entschlüsselt ist 
+	 * speichert das entschlüsselte Dokument für weitere Verwendung
+	 * return: entschlüsseltes pdf
 	 */
 	private static PDDocument decryptDoc() {
 
